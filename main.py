@@ -3,6 +3,8 @@ from finite_state_machine import FiniteStateMachine
 
 file = open('data.json')
 data = json.load(file)
+file.close()
+
 initial = data["initial"]
 rules = data["rules"]
 inputs = data["inputs"]
